@@ -57,6 +57,6 @@ RUN curl -s http://getcomposer.org/installer | php && \
 
 # Install mcrypt for dependencies
 RUN apt-get -y install libmcrypt-dev && \
-  pecl install mcrypt-1.0.2 &&
+  pecl install mcrypt-1.0.2
 
 COPY configuration/php.ini /usr/local/etc/php/php.ini
