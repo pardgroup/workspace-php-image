@@ -33,6 +33,7 @@ RUN apt-get update && \
         php7.3-gd \
         php7.3-dev \
         php7.3-bz2 \
+        php7.3-imagick \
         pkg-config \
         libcurl4-openssl-dev \
         libedit-dev \
@@ -42,8 +43,8 @@ RUN apt-get update && \
         git \
         curl \
         vim \
-        php-imagick \
         apt-utils \
+        zbar-tools \
         libzip-dev zip unzip \
         nasm && \
         php -m | grep -q 'zip' \
