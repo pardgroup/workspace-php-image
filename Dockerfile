@@ -45,6 +45,8 @@ RUN apt-get update && \
         vim \
         apt-utils \
         zbar-tools \
+        libzbar-dev \
+        libzbar0 \
         libzip-dev zip unzip \
         nasm && \
         php -m | grep -q 'zip' \
