@@ -56,6 +56,9 @@ RUN apt-get update && \
     && apt-get autoremove -y \
     && apt-get clean
 
+RUN pecl install imagick \
+	&& docker-php-ext-enable imagick
+
 # Install composer and add its bin to the PATH.
 RUN curl -s http://getcomposer.org/installer | php && \
     echo "export PATH=${PATH}:/var/www/vendor/bin" >> ~/.bashrc && \
