@@ -54,7 +54,7 @@ RUN curl -s http://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
 
 # Install mcrypt for dependencies
-RUN apt-get -y install libmcrypt4 && \
+RUN apt-get -y install libmcrypt-dev && \
   pecl install mcrypt-1.0.2
 
 COPY configuration/php.ini /etc/php/7.3/cli/conf.d/20-pard2.ini
