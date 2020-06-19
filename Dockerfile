@@ -30,6 +30,7 @@ RUN apt-get update && \
         php7.3-memcached \
         php7.3-cgi \
         php7.3-gd \
+        php7.3-dev \
         php7.3-imagick \
         imagemagick \
         curl \
@@ -54,5 +55,3 @@ RUN apt-get -y install && \
   pecl install mcrypt-1.0.2
 
 COPY configuration/php.ini /etc/php/7.3/cli/conf.d/20-pard2.ini
-
-
