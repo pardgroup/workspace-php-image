@@ -31,6 +31,7 @@ RUN apt-get update && \
         php7.3-cgi \
         php7.3-gd \
         php7.3-dev \
+        pkg-config \
         php7.3-imagick \
         imagemagick \
         curl \
