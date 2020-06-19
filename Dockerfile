@@ -34,6 +34,8 @@ RUN apt-get update && \
         pkg-config \
         php7.3-imagick \
         imagemagick \
+        libmagickwand-dev \
+        libmagickcore-dev \
         curl \
         vim \
         apt-utils \
